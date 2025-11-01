@@ -1,0 +1,69 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_n",
+						"type": "uint256"
+					}
+				],
+				"name": "sum",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"sum(uint256)": {
+					"notice": "定义⼀个函数来计算从1到n的累加和"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/ForAndWhileTest.sol": "ForAndWhileTest"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/ForAndWhileTest.sol": {
+			"keccak256": "0x0d20e9db0363d540277480ed9be7b06a51b2293673342e9bd43920615e932dfe",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a83b42e14446a2719d5dcde72b1ad226d60728885ff42660ff207660ef345974",
+				"dweb:/ipfs/QmYo1WGKAygwGPQZ8caCPgMsBsZvvf8aZQqT48CXMgyxKw"
+			]
+		}
+	},
+	"version": 1
+}
