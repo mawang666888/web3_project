@@ -1,0 +1,70 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "arr",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
+					}
+				],
+				"name": "example",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/ArrayShiftTest.sol": "ArrayShiftTest"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/ArrayShiftTest.sol": {
+			"keccak256": "0x029927f52520392266737bdb0a6f6f0571d3d5381a08427c8be5585620f092aa",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c817775f1f9d15c9b1cc48d8f914e845f9aac76b933ad0982b15416250e6e19c",
+				"dweb:/ipfs/QmSsmqs5q6xUqiaAdJxYR6d8SqRATEb6oTf8dWjeJoxF1F"
+			]
+		}
+	},
+	"version": 1
+}
