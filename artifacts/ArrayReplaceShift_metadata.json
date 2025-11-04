@@ -8,40 +8,25 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"name": "arr",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
+						"internalType": "uint256[]",
+						"name": "arr",
+						"type": "uint256[]"
+					},
 					{
 						"internalType": "uint256",
 						"name": "_index",
 						"type": "uint256"
 					}
 				],
-				"name": "remove",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "test",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"name": "efficientRemove",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "pure",
 				"type": "function"
 			}
 		],
@@ -58,7 +43,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/020ArrayReplaceShift.sol": "ArrayReplaceShift"
+			"contracts/ArrayReplaceShift.sol": "ArrayReplaceShift"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -72,12 +57,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/020ArrayReplaceShift.sol": {
-			"keccak256": "0x4d6220ad20a51454886c677c3127fcb102a54aa2d9bfe7509e636de2c678c562",
+		"contracts/ArrayReplaceShift.sol": {
+			"keccak256": "0xa7d6b99aec6dc054faf1613441647f67fdfc59dcc3429e3995ec44b890ff6b65",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b12d4f9a3a18801430689d415a8d47364e0cd8780530fb981f3b8f4d6b66de57",
-				"dweb:/ipfs/QmUS9M8zoMFcQyQVMf4eittvJb3Ud7r9RRcBCh2LjuuQ93"
+				"bzz-raw://8e469ad77ad169eb019b6bca8620a72e3c5c420ab935bf6f2b94938285c1aec3",
+				"dweb:/ipfs/QmZQ8Q2Dg47cdXeujkJa7YMYUp1i4EkiiFjrLntYbf2qQu"
 			]
 		}
 	},

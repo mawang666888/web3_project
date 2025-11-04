@@ -45,6 +45,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "getArray",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "test",
 				"outputs": [],
 				"stateMutability": "nonpayable",
@@ -79,11 +92,11 @@
 	},
 	"sources": {
 		"contracts/020ArrayReplaceShiftTest.sol": {
-			"keccak256": "0x2bbd15af80c8c47d6856ee7fd61e5878e5920fd72dba22133a6066c1155ab847",
+			"keccak256": "0x3fd6fe087d548c386bac6a59bb483cd820415360cf6996a8dea9848940dbb194",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://535552843d09341c3e0f9b371982249fce3aaec9b4b17f3149e71e082fed0bda",
-				"dweb:/ipfs/QmeQEpsYeyNdbBnqN6WDZpFqjbiZ9ZFLeDdgNeWA8kcuUg"
+				"bzz-raw://6dd81b5ab1979e869a9faa02f156007de0511958edeaf79417be32844ca30107",
+				"dweb:/ipfs/QmR4TKLwhzy35Rn6ZSHSS3RfMQo4qxGJFTBUg8dTdFiqC1"
 			]
 		}
 	},
