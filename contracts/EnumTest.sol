@@ -18,9 +18,8 @@ pragma solidity 0.8.7;
 // •
 // 提⽰：利⽤已学习的枚举操作和智能合约基础知识，完成作业。
 
-contract Enum{
-    
-    enum OrderStatus{
+contract Enum {
+    enum OrderStatus {
         None,
         Pending,
         Shipped,
@@ -29,7 +28,7 @@ contract Enum{
         Cancelled
     }
 
-    struct Order{
+    struct Order {
         address buyer;
         OrderStatus status;
     }
@@ -38,7 +37,7 @@ contract Enum{
     OrderStatus public status;
 
     function addOrder() external {
-        Order memory order1=Order(msg.sender,OrderStatus.Pending);
+        Order memory order1 = Order(msg.sender, OrderStatus.Pending);
 
         Order memory order2;
         order2.buyer=address(2);
@@ -53,7 +52,34 @@ contract Enum{
         orders.push(order2);
         orders.push(order3);
         orders.push(Order(address(4),OrderStatus.Cancelled));
-
     }
 
+    function updateStatus(uint orderId, OrderStatus _status) external {
+        require(orderId < orders.length, "orderId not exist");
+        orders[orderId].status = _status;
+    }
+
+    function getStatus(uint orderId) external view returns (OrderStatus) {
+        require(orderId < orders.length, "order not exist");
+        return orders[orderId].status;
+    }
+
+    function shipOrder(uint orderId) external {
+        require(orderId < orders.length, "order not exist");
+        orders[orderId].status = OrderStatus.Shipped;
+    }
+
+    function completeOrder(uint orderId) external {
+        require(orderId < orders.length, "order not exist");
+        orders[orderId].status = OrderStatus.Completed;
+    }
+
+    function reset(uint orderId) external {
+        require(orderId < orders.length, "orderId not exist");
+        delete orders[orderId].status;
+    }
+
+    function getOrderLength() external view returns (uint) {
+        return orders.length;
+    }
 }

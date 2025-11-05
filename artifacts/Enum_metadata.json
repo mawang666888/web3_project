@@ -16,6 +16,51 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
+						"name": "orderId",
+						"type": "uint256"
+					}
+				],
+				"name": "completeOrder",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getOrderLength",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "orderId",
+						"type": "uint256"
+					}
+				],
+				"name": "getStatus",
+				"outputs": [
+					{
+						"internalType": "enum Enum.OrderStatus",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
 					}
@@ -37,6 +82,32 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "orderId",
+						"type": "uint256"
+					}
+				],
+				"name": "reset",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "orderId",
+						"type": "uint256"
+					}
+				],
+				"name": "shipOrder",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "status",
 				"outputs": [
@@ -47,6 +118,24 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "orderId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "enum Enum.OrderStatus",
+						"name": "_status",
+						"type": "uint8"
+					}
+				],
+				"name": "updateStatus",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -78,11 +167,11 @@
 	},
 	"sources": {
 		"contracts/EnumTest.sol": {
-			"keccak256": "0x55423ada367b80658036d043a2ed21cd809cf3db8c2f255f3ffedcfc8c795d2b",
+			"keccak256": "0x2713df356d6d14398f13f6133f2fe1ced37874454859cc46b377dd91d226e220",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://fe43c56cfdc6f118ab2f443a1f73617368bbd5e33cb5ce9460e3446bc24d94e6",
-				"dweb:/ipfs/QmRZMGXJnWhHGeB1iEpAdwtvr2miJTmRKd5n3ijxosR9wc"
+				"bzz-raw://ca06a96508f0994b191a5f5ae0f3b11cc97c95e385af2e8f3d369720a193dc6e",
+				"dweb:/ipfs/Qme3oEgnt1SodfJnVvnVquoPnWFFXS1rvKsKYANgp1MJVb"
 			]
 		}
 	},
