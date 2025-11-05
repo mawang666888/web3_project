@@ -78,11 +78,11 @@
 	},
 	"sources": {
 		"contracts/EnumTest.sol": {
-			"keccak256": "0x78020f890bef35459e70550c22c4ae5b4d24a9d58a6606498cb4e769975aea4d",
+			"keccak256": "0x55423ada367b80658036d043a2ed21cd809cf3db8c2f255f3ffedcfc8c795d2b",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b47ac8f26c8b2b58ad76ea0148f1df122b8f874ede7bbcd88277970798d0352b",
-				"dweb:/ipfs/QmYsexLzcZzeR68yWAf4kH1JWSuA29p4LSXSYbwEXhju98"
+				"bzz-raw://fe43c56cfdc6f118ab2f443a1f73617368bbd5e33cb5ce9460e3446bc24d94e6",
+				"dweb:/ipfs/QmRZMGXJnWhHGeB1iEpAdwtvr2miJTmRKd5n3ijxosR9wc"
 			]
 		}
 	},

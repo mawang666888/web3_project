@@ -52,7 +52,7 @@ contract Enum{
         orders.push(order1);
         orders.push(order2);
         orders.push(order3);
-        orders.push(Order(address(4),OrderStatus.Cancelled))
+        orders.push(Order(address(4),OrderStatus.Cancelled));
 
     }
 
