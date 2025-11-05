@@ -45,7 +45,7 @@
 						"type": "uint256"
 					}
 				],
-				"name": "getBalanceByIndex",
+				"name": "getBalance",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -124,12 +124,12 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "_addr",
+						"name": "_key",
 						"type": "address"
 					},
 					{
 						"internalType": "uint256",
-						"name": "_balances",
+						"name": "_amount",
 						"type": "uint256"
 					}
 				],
@@ -152,7 +152,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/IterableMapping.sol": "IterableMapping"
+			"contracts/IterableMappingTest.sol": "IterableMapping"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -166,12 +166,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/IterableMapping.sol": {
-			"keccak256": "0x25320d6234e8880c9a90b3e783782851a95e759ae70806c2a8db8665479d9d78",
+		"contracts/IterableMappingTest.sol": {
+			"keccak256": "0x6db2a00e5a99a2f131f7c771e7269936495bd8e764e765b9c39995aefb068dd5",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://a69a58115319645027d62d834e372537065cd938fe0ff25315ec8aa2515c7773",
-				"dweb:/ipfs/QmYq2StgWEc1C9FNAJeTwnw9EDGJoFneuAtZeUhgxVgbWE"
+				"bzz-raw://b846d006ee40b1fe723cd12afafe9f4a079525c7ab1cadaad963a663dcedf4d3",
+				"dweb:/ipfs/QmY1ZZZUkYTBgtFjFmHhbGY9FcE9w195hGtbhoBkhtWj2z"
 			]
 		}
 	},
