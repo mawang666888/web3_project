@@ -1,0 +1,77 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_str",
+						"type": "string"
+					}
+				],
+				"name": "updateStruct",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "str",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256[]",
+								"name": "arr",
+								"type": "uint256[]"
+							}
+						],
+						"internalType": "struct DataLocation.MyStruct",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/DataLocation.sol": "DataLocation"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/DataLocation.sol": {
+			"keccak256": "0xae8dc3167f1970bf95e861722a968a001dd98189454d5a0b662c93981a28204e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ca54d47cecb0823af9885d64c9eff0a8a24e667f1719d7ffb83d5bc1531c6ac7",
+				"dweb:/ipfs/QmZxf1VaRqn6LTyQJhEcYsuVrtMcfL1pnH4SJSKe1zzJLV"
+			]
+		}
+	},
+	"version": 1
+}

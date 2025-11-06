@@ -20,33 +20,7 @@
 						"type": "uint256"
 					}
 				],
-				"name": "completeOrder",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getOrderLength",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "orderId",
-						"type": "uint256"
-					}
-				],
-				"name": "getStatus",
+				"name": "getOrderStatus",
 				"outputs": [
 					{
 						"internalType": "enum Enum.OrderStatus",
@@ -61,63 +35,13 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"name": "orders",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "buyer",
-						"type": "address"
-					},
-					{
-						"internalType": "enum Enum.OrderStatus",
-						"name": "status",
-						"type": "uint8"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
 						"name": "orderId",
 						"type": "uint256"
 					}
 				],
-				"name": "reset",
+				"name": "resetOrderStatus",
 				"outputs": [],
 				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "orderId",
-						"type": "uint256"
-					}
-				],
-				"name": "shipOrder",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "status",
-				"outputs": [
-					{
-						"internalType": "enum Enum.OrderStatus",
-						"name": "",
-						"type": "uint8"
-					}
-				],
-				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -129,11 +53,11 @@
 					},
 					{
 						"internalType": "enum Enum.OrderStatus",
-						"name": "_status",
+						"name": "status",
 						"type": "uint8"
 					}
 				],
-				"name": "updateStatus",
+				"name": "updateOrderStatus",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -152,7 +76,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/EnumTest.sol": "Enum"
+			"contracts/Enum.sol": "Enum"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -166,12 +90,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/EnumTest.sol": {
-			"keccak256": "0x2713df356d6d14398f13f6133f2fe1ced37874454859cc46b377dd91d226e220",
+		"contracts/Enum.sol": {
+			"keccak256": "0x4d8453e570ccaab4de0ea878a8f6f427dcab4a38752fd281cced185a63401167",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ca06a96508f0994b191a5f5ae0f3b11cc97c95e385af2e8f3d369720a193dc6e",
-				"dweb:/ipfs/Qme3oEgnt1SodfJnVvnVquoPnWFFXS1rvKsKYANgp1MJVb"
+				"bzz-raw://7a0cea5f06bc6e9dc2051757ef55893f3b3b729eb7c83e6ca6c31bd57089675c",
+				"dweb:/ipfs/QmRUG3MS4TrYdLTb1M8Qs6K9jimNYvuVwr7tERW7XD2e61"
 			]
 		}
 	},
