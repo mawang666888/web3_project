@@ -7,7 +7,20 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "get",
+				"name": "getMessage",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "message",
 				"outputs": [
 					{
 						"internalType": "string",
@@ -22,26 +35,13 @@
 				"inputs": [
 					{
 						"internalType": "string",
-						"name": "_text",
+						"name": "_message",
 						"type": "string"
 					}
 				],
-				"name": "set",
+				"name": "setMessage",
 				"outputs": [],
 				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "text",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					}
-				],
-				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -58,7 +58,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/026SimpleStorage.sol": "SimpleStorage"
+			"contracts/MessageStore.sol": "MessageStore"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -72,12 +72,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/026SimpleStorage.sol": {
-			"keccak256": "0x535bfe5da72242431be5954d945f1e36b64f50e0b09861fa17f96e92cd406a5c",
+		"contracts/MessageStore.sol": {
+			"keccak256": "0x8dd7dd61d7d765dcd477a70acfa5bd1b7fa484ff1688c3967ed3aeffd39569e1",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b9fd4d77c63ec3c12ecb8abec082c3529e72515a2f8a012e90883e53bf2f0212",
-				"dweb:/ipfs/QmUCh315ibCect6ZhtEFVHj2rXkRcRZPo1ThVnphxPs6wk"
+				"bzz-raw://d372a297f205b04ccbd9e2a6c565dc5c319fcd8c8ed9e3d1db6208e0d9165844",
+				"dweb:/ipfs/QmeWXkntvmWbWPYkL9qgP9Qbuzswgq84T4VUDzm3hQvYxw"
 			]
 		}
 	},

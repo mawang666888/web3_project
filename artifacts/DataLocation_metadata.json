@@ -6,6 +6,61 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "getStruct",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "myStruct",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "str",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "_arr",
+						"type": "uint256[]"
+					}
+				],
+				"name": "processArray",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "string",
@@ -13,27 +68,9 @@
 						"type": "string"
 					}
 				],
-				"name": "updateStruct",
-				"outputs": [
-					{
-						"components": [
-							{
-								"internalType": "string",
-								"name": "str",
-								"type": "string"
-							},
-							{
-								"internalType": "uint256[]",
-								"name": "arr",
-								"type": "uint256[]"
-							}
-						],
-						"internalType": "struct DataLocation.MyStruct",
-						"name": "",
-						"type": "tuple"
-					}
-				],
-				"stateMutability": "pure",
+				"name": "updateStr",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -65,11 +102,11 @@
 	},
 	"sources": {
 		"contracts/DataLocation.sol": {
-			"keccak256": "0xf7dfa40ca4767eb77f31a0b25c3e852817947fc9cd5d3ded54169bc3a5b40407",
+			"keccak256": "0xd016bd654e0b100ccad7085136d6d0ed3a484518effe3bfa07055ee96636bd52",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://aae6a0e4aa94a7441778a3d505e83ecdac9db98546c66309c98c64a330c5d85e",
-				"dweb:/ipfs/QmRLDzeJr49KcKDW7XgnqfZD4hTQLpWUZT5mwb9Y66ZLRv"
+				"bzz-raw://91dee401cc6a201603bcdea11c4016cb98ed7b475a770cf4d89f543569390ad9",
+				"dweb:/ipfs/QmZqwAfibRkPkmedFvpLfeSKqHiNrX4Hho6wWs55i7TmcW"
 			]
 		}
 	},

@@ -16,21 +16,41 @@ contract DataLocation {
         uint[] arr;
     }
 
-    function updateStruct(string memory _str) external pure returns (MyStruct memory) {
-        uint[] memory tempArr = new uint[](3);
-        tempArr[0] = 1;
-        tempArr[1] = 2;
-        tempArr[2] = 3;
+    //这个之前是缺失的
+    MyStruct public myStruct;
 
-        MyStruct memory struct1 = MyStruct(_str, tempArr);
-        return struct1;
+    constructor() {
+        myStruct.str = "jack";
+        myStruct.arr = [1, 2, 3];
     }
 
-    // function getStruct(uint[] calldata _arr) external pure returns(MyStruct memory){
-    //     MyStruct storage struct1;
-    //     struct1.arr=_arr;
-    //     MyStruct storage ms=struct1;
-    //     return ms;
-        
-    // }
+    //之前是memory
+    function updateStr(string calldata _str) external {
+        MyStruct storage struct1 = myStruct;
+        struct1.str = _str;
+    }
+
+    function processArray(
+        uint[] calldata _arr
+    ) external pure returns (uint[] memory) {
+        return _internalProcess(_arr);
+    }
+
+    function _internalProcess(
+        uint[] calldata data
+    ) private pure returns (uint[] memory) {
+        //创建新的memory数组
+        uint[] memory result = new uint[](data.length);
+
+        //处理calldata只读
+        for (uint i = 0; i < data.length; i++) {
+            result[i] = data[i] + 100; //每个元素加100
+        }
+
+        return result;
+    }
+
+    function getStruct() external view returns (string memory, uint[] memory) {
+        return (myStruct.str, myStruct.arr);
+    }
 }
