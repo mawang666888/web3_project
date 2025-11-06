@@ -26,11 +26,11 @@ contract DataLocation {
         return struct1;
     }
 
-    function getStruct(uint[] calldata _arr) external pure returns(MyStruct memory){
-        MyStruct storage struct1;
-        struct1.arr=_arr;
-        MyStruct storage ms=struct1;
-        return ms;
+    // function getStruct(uint[] calldata _arr) external pure returns(MyStruct memory){
+    //     MyStruct storage struct1;
+    //     struct1.arr=_arr;
+    //     MyStruct storage ms=struct1;
+    //     return ms;
         
-    }
+    // }
 }

@@ -65,11 +65,11 @@
 	},
 	"sources": {
 		"contracts/DataLocation.sol": {
-			"keccak256": "0xae8dc3167f1970bf95e861722a968a001dd98189454d5a0b662c93981a28204e",
+			"keccak256": "0xf7dfa40ca4767eb77f31a0b25c3e852817947fc9cd5d3ded54169bc3a5b40407",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ca54d47cecb0823af9885d64c9eff0a8a24e667f1719d7ffb83d5bc1531c6ac7",
-				"dweb:/ipfs/QmZxf1VaRqn6LTyQJhEcYsuVrtMcfL1pnH4SJSKe1zzJLV"
+				"bzz-raw://aae6a0e4aa94a7441778a3d505e83ecdac9db98546c66309c98c64a330c5d85e",
+				"dweb:/ipfs/QmRLDzeJr49KcKDW7XgnqfZD4hTQLpWUZT5mwb9Y66ZLRv"
 			]
 		}
 	},
