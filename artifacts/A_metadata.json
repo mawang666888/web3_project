@@ -6,16 +6,30 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "foo",
-				"outputs": [
+				"anonymous": false,
+				"inputs": [
 					{
+						"indexed": false,
 						"internalType": "string",
-						"name": "",
+						"name": "message",
 						"type": "string"
 					}
 				],
-				"stateMutability": "pure",
+				"name": "Log",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "bar",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "foo",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -32,7 +46,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/MutipleInheritanceTest.sol": "A"
+			"contracts/ParentFunctions.sol": "A"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -46,12 +60,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/MutipleInheritanceTest.sol": {
-			"keccak256": "0xe77dc107d5b9d3d7913840f9276e36da705757ad898694cb4df9a2aae31c6157",
+		"contracts/ParentFunctions.sol": {
+			"keccak256": "0x7fa3b26c0ddad1a27919c346f03b45ed635e5fe00b512e3f3c40875c3313ec47",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://cd9c874f6893f314ec3e86857b965f96e2d0190bd3dc7da671459beb356ed370",
-				"dweb:/ipfs/QmP7dyo72vJmgUuRekczb3UfUb395mqoY84ASQJL1ZZrCy"
+				"bzz-raw://536193391954de768f0e3161731cb74d7a462bd26a8b8cd968643634a9b996f8",
+				"dweb:/ipfs/QmSnbWhXZHZHaewGR3oSQL9ZqStHd7UdH1EVWk94TKWd7x"
 			]
 		}
 	},

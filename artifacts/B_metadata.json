@@ -7,15 +7,48 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "foo",
+				"name": "examples",
+				"outputs": [],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "externalFun",
 				"outputs": [
 					{
-						"internalType": "string",
+						"internalType": "uint256",
 						"name": "",
-						"type": "string"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "publicFun",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "z",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -32,7 +65,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/MutipleInheritanceTest.sol": "B"
+			"contracts/034Visibility.sol": "B"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -46,12 +79,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/MutipleInheritanceTest.sol": {
-			"keccak256": "0xe77dc107d5b9d3d7913840f9276e36da705757ad898694cb4df9a2aae31c6157",
+		"contracts/034Visibility.sol": {
+			"keccak256": "0x08177643f4a057d2662a299fe05b9f267b296702677b8f3f3910eb67e15eac88",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://cd9c874f6893f314ec3e86857b965f96e2d0190bd3dc7da671459beb356ed370",
-				"dweb:/ipfs/QmP7dyo72vJmgUuRekczb3UfUb395mqoY84ASQJL1ZZrCy"
+				"bzz-raw://2b1366d38eca94c61994075a0ddaafcd296191111af7197be36e1d505eda7b7e",
+				"dweb:/ipfs/QmNehq59mVntkFMFPBiKih2beBTNwPgik1cu7GeEiJwo7j"
 			]
 		}
 	},

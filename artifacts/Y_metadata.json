@@ -7,12 +7,26 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "bar",
+				"name": "examples",
+				"outputs": [],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "examples2",
+				"outputs": [],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "externalFun",
 				"outputs": [
 					{
-						"internalType": "string",
+						"internalType": "uint256",
 						"name": "",
-						"type": "string"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "pure",
@@ -20,38 +34,25 @@
 			},
 			{
 				"inputs": [],
-				"name": "fool",
+				"name": "pub",
 				"outputs": [
 					{
-						"internalType": "string",
+						"internalType": "uint256",
 						"name": "",
-						"type": "string"
+						"type": "uint256"
 					}
 				],
-				"stateMutability": "pure",
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "x",
+				"name": "publicFun",
 				"outputs": [
 					{
-						"internalType": "string",
+						"internalType": "uint256",
 						"name": "",
-						"type": "string"
-					}
-				],
-				"stateMutability": "pure",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "y",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "pure",
@@ -71,7 +72,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/031MutipleInheritance.sol": "Y"
+			"contracts/Visibility.sol": "Y"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -85,12 +86,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/031MutipleInheritance.sol": {
-			"keccak256": "0x0b84982ffd24cf54048d733863dec550550c13b3357c8ee1b86218dfce10aa9f",
+		"contracts/Visibility.sol": {
+			"keccak256": "0xa7e1daae611a64c084431a8691d2aa2c189911fe41f7a646f2e4e615510c348b",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://114c1bf499a77cc9eace013144de18ee2815f9369dcdd7dc0920d3f2c2cf8756",
-				"dweb:/ipfs/QmTKESi8Sgf3vTnm8VGueK6XXKFjum3yXwyfJyNPWd8cSy"
+				"bzz-raw://9e77d66817750d020ab354f7a2fcb8e5bfd707591403af5003214a5dc03e074f",
+				"dweb:/ipfs/QmW3Uomsbwg8rjXt1Fuvcm8VhJsJfVgeMTd6QiXg2Z78jc"
 			]
 		}
 	},
