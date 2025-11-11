@@ -1,0 +1,64 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "contract TestContract",
+						"name": "_test",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_x",
+						"type": "uint256"
+					}
+				],
+				"name": "setX",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/040CallOtherContracts.sol": "caller"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/040CallOtherContracts.sol": {
+			"keccak256": "0x8bc68d591ff28977ec738c9ed58f4378696b4f2892ae9b50ca640ba8bcc9bf4b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://cdfef92df5778e66b79820e5f21cf5890d9e3849c7f256da745e6fc4c9f88bb8",
+				"dweb:/ipfs/QmZf85rUj29qijBfjk3aguH6bEta3EEjsr77o9muqUgzLa"
+			]
+		}
+	},
+	"version": 1
+}
