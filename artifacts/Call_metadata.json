@@ -1,0 +1,85 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_test",
+						"type": "address"
+					}
+				],
+				"name": "callFoo",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_test",
+						"type": "address"
+					}
+				],
+				"name": "callNotExist",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "data",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/042Call.sol": "Call"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/042Call.sol": {
+			"keccak256": "0xa82f8d38bd99574615c50d3311b6558bc83eb278d902132c054ea0733ad800e6",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://544ec7d4fb7f72f621b09ef53a240b8d6a0e3345d476b1f8c98c97e624727153",
+				"dweb:/ipfs/Qmcnmrh9yiZLS73E6z3Z2woFfH5YYdbUmgMf6Yoa4Go9Sq"
+			]
+		}
+	},
+	"version": 1
+}

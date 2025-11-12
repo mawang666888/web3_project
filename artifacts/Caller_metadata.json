@@ -9,79 +9,39 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "_test",
+						"name": "_testContract",
 						"type": "address"
 					}
 				],
-				"name": "getX",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "x",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
+				"name": "callFoo",
+				"outputs": [],
+				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "_test",
+						"name": "_testContract",
 						"type": "address"
 					}
 				],
-				"name": "getXandValue",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "x",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "value",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "contract TestContract",
-						"name": "_test",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_x",
-						"type": "uint256"
-					}
-				],
-				"name": "setX",
+				"name": "callNonExistentFunction",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
-				"inputs": [
+				"inputs": [],
+				"name": "data",
+				"outputs": [
 					{
-						"internalType": "contract TestContract",
-						"name": "_test",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_x",
-						"type": "uint256"
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
 					}
 				],
-				"name": "setXandSendEther",
-				"outputs": [],
-				"stateMutability": "payable",
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -98,7 +58,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/040CallOtherContracts.sol": "Caller"
+			"contracts/TestContract.sol": "Caller"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -112,12 +72,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/040CallOtherContracts.sol": {
-			"keccak256": "0x4fb4cb5f4be9990aa9e1d83790d9382bf3924fa64b1701f5ad32fb3bc39c24ee",
+		"contracts/TestContract.sol": {
+			"keccak256": "0xeea0721436e11ebc7883664efe3962ce78b309df08b83363bda4550c86faa4da",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://6fb71c30f6b5bf87a00d16854b027717e19a93db49ff22a8f34eee92bc62dfe8",
-				"dweb:/ipfs/QmXPkkCEaMCduDHJqe2BvPGQrZCSQpvuDDTr113qejb8U2"
+				"bzz-raw://c750db70daa37ddc734c6d0c31806a0549e102aa0f5d233c17cf38c916e29396",
+				"dweb:/ipfs/QmSs7MEKTWckDXVypCeu5gabrjuosQjd9MadunoGrgPASP"
 			]
 		}
 	},

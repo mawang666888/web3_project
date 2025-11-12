@@ -6,50 +6,53 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "getX",
-				"outputs": [
+				"anonymous": false,
+				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getXandValue",
-				"outputs": [
+						"indexed": false,
+						"internalType": "address",
+						"name": "addr",
+						"type": "address"
+					},
 					{
+						"indexed": false,
 						"internalType": "uint256",
-						"name": "",
+						"name": "amount",
 						"type": "uint256"
 					},
 					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
+						"indexed": false,
+						"internalType": "string",
+						"name": "msg",
+						"type": "string"
 					}
 				],
-				"stateMutability": "view",
-				"type": "function"
+				"name": "Log",
+				"type": "event"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "fallback"
 			},
 			{
 				"inputs": [
 					{
+						"internalType": "string",
+						"name": "_msg",
+						"type": "string"
+					},
+					{
 						"internalType": "uint256",
-						"name": "_x",
+						"name": "_num",
 						"type": "uint256"
 					}
 				],
-				"name": "setXandSendEther",
+				"name": "foo",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "bool",
 						"name": "",
-						"type": "uint256"
+						"type": "bool"
 					},
 					{
 						"internalType": "uint256",
@@ -61,27 +64,21 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_x",
-						"type": "uint256"
-					}
-				],
-				"name": "setx",
+				"inputs": [],
+				"name": "message",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "string",
 						"name": "",
-						"type": "uint256"
+						"type": "string"
 					}
 				],
-				"stateMutability": "nonpayable",
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "value",
+				"name": "number",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -93,17 +90,8 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "x",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
+				"stateMutability": "payable",
+				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -119,7 +107,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/040CallOtherContracts.sol": "TestContract"
+			"contracts/TestContract.sol": "TestContract"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -133,12 +121,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/040CallOtherContracts.sol": {
-			"keccak256": "0x4fb4cb5f4be9990aa9e1d83790d9382bf3924fa64b1701f5ad32fb3bc39c24ee",
+		"contracts/TestContract.sol": {
+			"keccak256": "0xeea0721436e11ebc7883664efe3962ce78b309df08b83363bda4550c86faa4da",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://6fb71c30f6b5bf87a00d16854b027717e19a93db49ff22a8f34eee92bc62dfe8",
-				"dweb:/ipfs/QmXPkkCEaMCduDHJqe2BvPGQrZCSQpvuDDTr113qejb8U2"
+				"bzz-raw://c750db70daa37ddc734c6d0c31806a0549e102aa0f5d233c17cf38c916e29396",
+				"dweb:/ipfs/QmSs7MEKTWckDXVypCeu5gabrjuosQjd9MadunoGrgPASP"
 			]
 		}
 	},
