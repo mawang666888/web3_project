@@ -7,40 +7,59 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "examples",
-				"outputs": [],
+				"name": "num",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "externalFun",
+				"name": "owner",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "address",
 						"name": "",
-						"type": "uint256"
+						"type": "address"
 					}
 				],
-				"stateMutability": "pure",
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "publicFun",
+				"name": "sender",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "address",
 						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_num",
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "pure",
+				"name": "setVars",
+				"outputs": [],
+				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "z",
+				"name": "value",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -65,7 +84,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/034Visibility.sol": "B"
+			"contracts/043DelegateCall.sol": "B"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -79,12 +98,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/034Visibility.sol": {
-			"keccak256": "0x08177643f4a057d2662a299fe05b9f267b296702677b8f3f3910eb67e15eac88",
+		"contracts/043DelegateCall.sol": {
+			"keccak256": "0x5b44aa21f28375ca402b3a9f947227ec841962f99ea73da22c7fbb40d7a0c954",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://2b1366d38eca94c61994075a0ddaafcd296191111af7197be36e1d505eda7b7e",
-				"dweb:/ipfs/QmNehq59mVntkFMFPBiKih2beBTNwPgik1cu7GeEiJwo7j"
+				"bzz-raw://1d0308a0980dc2f2e2efd792959fd6998330fd36c8c4f502d877bf0bf838dcb4",
+				"dweb:/ipfs/Qmb3YC1x4vrRW4mnQ8i2NPTZNumwuBREfEncsFp9Lsamv1"
 			]
 		}
 	},

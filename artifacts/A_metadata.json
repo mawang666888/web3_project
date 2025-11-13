@@ -6,30 +6,60 @@
 	"output": {
 		"abi": [
 			{
-				"anonymous": false,
-				"inputs": [
+				"inputs": [],
+				"name": "num",
+				"outputs": [
 					{
-						"indexed": false,
-						"internalType": "string",
-						"name": "message",
-						"type": "string"
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
 					}
 				],
-				"name": "Log",
-				"type": "event"
-			},
-			{
-				"inputs": [],
-				"name": "bar",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "foo",
+				"name": "sender",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_contract",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_num",
+						"type": "uint256"
+					}
+				],
+				"name": "setVars",
 				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "value",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -46,7 +76,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/ParentFunctions.sol": "A"
+			"contracts/043DelegateCall.sol": "A"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -60,12 +90,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/ParentFunctions.sol": {
-			"keccak256": "0x7fa3b26c0ddad1a27919c346f03b45ed635e5fe00b512e3f3c40875c3313ec47",
+		"contracts/043DelegateCall.sol": {
+			"keccak256": "0x5b44aa21f28375ca402b3a9f947227ec841962f99ea73da22c7fbb40d7a0c954",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://536193391954de768f0e3161731cb74d7a462bd26a8b8cd968643634a9b996f8",
-				"dweb:/ipfs/QmSnbWhXZHZHaewGR3oSQL9ZqStHd7UdH1EVWk94TKWd7x"
+				"bzz-raw://1d0308a0980dc2f2e2efd792959fd6998330fd36c8c4f502d877bf0bf838dcb4",
+				"dweb:/ipfs/Qmb3YC1x4vrRW4mnQ8i2NPTZNumwuBREfEncsFp9Lsamv1"
 			]
 		}
 	},
