@@ -6,7 +6,7 @@ contract Account {
     address public owner;
 
     constructor(address _owner) payable {
-        bank = msg.sender;
+        bank = msg.sender;//工厂合约
         owner = _owner;
     }
 }
