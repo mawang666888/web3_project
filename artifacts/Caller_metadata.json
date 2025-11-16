@@ -6,12 +6,18 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "num",
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_test",
+						"type": "address"
+					}
+				],
+				"name": "getX",
 				"outputs": [
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "x",
 						"type": "uint256"
 					}
 				],
@@ -22,16 +28,58 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "_addr",
+						"name": "_test",
+						"type": "address"
+					}
+				],
+				"name": "getXandValue",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "x",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "contract TestContract",
+						"name": "_test",
 						"type": "address"
 					},
 					{
 						"internalType": "uint256",
-						"name": "_num",
+						"name": "_x",
 						"type": "uint256"
 					}
 				],
-				"name": "setNum",
+				"name": "setX",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "contract TestContract",
+						"name": "_test",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_x",
+						"type": "uint256"
+					}
+				],
+				"name": "setXandSendEther",
 				"outputs": [],
 				"stateMutability": "payable",
 				"type": "function"
@@ -50,7 +98,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/DelegateCall.sol": "Caller"
+			"contracts/040CallOtherContracts.sol": "Caller"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -64,12 +112,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/DelegateCall.sol": {
-			"keccak256": "0xb60cea459b7a55ef3cf04a9420a1527238e0b665d73508bb902cefeb9f57bd72",
+		"contracts/040CallOtherContracts.sol": {
+			"keccak256": "0x4fb4cb5f4be9990aa9e1d83790d9382bf3924fa64b1701f5ad32fb3bc39c24ee",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://e4cfbdad3196f6d8bb7c47d95d4b6d53b38e3f98241a2841ce7c1f2181771dd5",
-				"dweb:/ipfs/QmTThshbbFhw1cWEJCJ21vY5GrU9pWPNZmDQsc1GCQQ5nJ"
+				"bzz-raw://6fb71c30f6b5bf87a00d16854b027717e19a93db49ff22a8f34eee92bc62dfe8",
+				"dweb:/ipfs/QmXPkkCEaMCduDHJqe2BvPGQrZCSQpvuDDTr113qejb8U2"
 			]
 		}
 	},
