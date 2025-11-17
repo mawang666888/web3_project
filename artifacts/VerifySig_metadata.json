@@ -9,7 +9,7 @@
 				"inputs": [
 					{
 						"internalType": "bytes32",
-						"name": "_messageHash",
+						"name": "_messagehash",
 						"type": "bytes32"
 					}
 				],
@@ -47,7 +47,7 @@
 				"inputs": [
 					{
 						"internalType": "bytes32",
-						"name": "_ethSignedMessageHash",
+						"name": "_ethsignmessagehash",
 						"type": "bytes32"
 					},
 					{
@@ -110,7 +110,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/047Sig.sol": "VerifySig"
+			"contracts/Sig.sol": "VerifySig"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -124,12 +124,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/047Sig.sol": {
-			"keccak256": "0x6aba8e7982cd4d3f875465f929c87053befe8e8e802d68923535b92da9daa308",
+		"contracts/Sig.sol": {
+			"keccak256": "0x7b52855aaf8eda3f9cb3ec29020a98cd77d3d685a2a15859ae65b90799b5e808",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://fd5a16b2503086d72967d84db8151157f17f2b78bed1382abdfabc47d9bfce1c",
-				"dweb:/ipfs/QmNSP47ZGKQp2kx2S9T4WZBVQae7v6w7ZKDibUmGorpoy8"
+				"bzz-raw://e8766c4079fd42f118d093d3c9a1e6ab135c44c4a0c1b023a77ce4554eb547b4",
+				"dweb:/ipfs/QmaZKY6gxGeNKym6LQjLPNtLXfuJQdBvsv94cDkE9Wqakx"
 			]
 		}
 	},

@@ -14,17 +14,23 @@ contract VerifySig {
         string memory _message,
         bytes memory _sig
     ) external pure returns (bool) {
+        //获取hash
         bytes32 messageHash = getMessageHash(_message);
+        //二次加工hash
         bytes32 ethSignedMessageHash = getEthSignedMessageHash(messageHash);
+        //恢复看 发送地址是否吻合
+        //_sig是小狐狸钱包控制台获取的签名
         return recover(ethSignedMessageHash, _sig) == _signer;
     }
 
+    //获取消息哈希值
     function getMessageHash(
         string memory _message
     ) public pure returns (bytes32) {
         return keccak256(abi.encodePacked(_message));
     }
 
+    //再次对已获取的hash 加工信息
     function getEthSignedMessageHash(
         bytes32 _messageHash
     ) public pure returns (bytes32) {
@@ -37,10 +43,12 @@ contract VerifySig {
             );
     }
 
+    //恢复
     function recover(
         bytes32 _ethSignedMessageHash,
         bytes memory _sig
     ) public pure returns (address) {
+        //对签名信息拆分
         (bytes32 r, bytes32 s, uint8 v) = _split(_sig);
         return ecrecover(_ethSignedMessageHash, v, r, s);
     }
