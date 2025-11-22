@@ -1,37 +1,24 @@
 {
 	"compiler": {
-		"version": "0.8.7+commit.e28d00a7"
+		"version": "0.8.23+commit.f704f362"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "getBytecode1",
-				"outputs": [
-					{
-						"internalType": "bytes",
-						"name": "",
-						"type": "bytes"
-					}
-				],
-				"stateMutability": "pure",
-				"type": "function"
-			},
-			{
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "_x",
+						"name": "x",
 						"type": "uint256"
 					},
 					{
 						"internalType": "uint256",
-						"name": "_y",
+						"name": "y",
 						"type": "uint256"
 					}
 				],
-				"name": "getBytecode2",
+				"name": "getFunc1Data",
 				"outputs": [
 					{
 						"internalType": "bytes",
@@ -43,14 +30,21 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
+				"inputs": [],
+				"name": "getFunc2Data",
+				"outputs": [
 					{
-						"internalType": "address",
-						"name": "_owner",
-						"type": "address"
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
 					}
 				],
-				"name": "getCalldata",
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getMintData",
 				"outputs": [
 					{
 						"internalType": "bytes",
@@ -75,9 +69,9 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/025Proxy.sol": "Helper"
+			"contracts/059MultiDelegateCall.sol": "Helper"
 		},
-		"evmVersion": "london",
+		"evmVersion": "shanghai",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -89,12 +83,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/025Proxy.sol": {
-			"keccak256": "0x0b11ab8cfe5f45d5f03bd8c142085df8c515518bd24389eead546cec9cd4aec8",
+		"contracts/059MultiDelegateCall.sol": {
+			"keccak256": "0xbb677fdabbfe67dcf8f9a66821f01ce3628c1ce40b0fe14a815d38bae717da9c",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://47e9c3122d3a873165b8f1dcda3a91f7e7418f5df260096fc8dbd3e9de802bc9",
-				"dweb:/ipfs/QmNS8JpcptzcjRtTLRQGVAmMvyyCMssjEqiNoNCzT64GuG"
+				"bzz-raw://4516a336e6f02267db90a0edd61da936936c91a5dbaaff9d0760083daeaba799",
+				"dweb:/ipfs/QmaYDffCxes2XdE4KYddr1Z5Y8s68NPs4KSzVfenkfKnjt"
 			]
 		}
 	},
