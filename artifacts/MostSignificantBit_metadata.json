@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.8.24+commit.e11b9ed9"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "x",
+						"type": "uint256"
+					}
+				],
+				"name": "findMostSignificantBit",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "r",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/065MostSignificantBit.sol": "MostSignificantBit"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/065MostSignificantBit.sol": {
+			"keccak256": "0xc2a2509b8c7429afff787b1a19cd8baf037945c004e5a4781f1a3bc488d74a25",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://da85459463c838c5a55698ec77e29afb2f7420ec8e6d14886aae2e8c137773d3",
+				"dweb:/ipfs/QmcCfiv9kvEEMFrys2Ew3gfgR2bosw9v5uVeYnTksqgKmY"
+			]
+		}
+	},
+	"version": 1
+}
