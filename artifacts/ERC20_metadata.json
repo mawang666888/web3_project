@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.25+commit.b61c2a91"
+		"version": "0.8.24+commit.e11b9ed9"
 	},
 	"language": "Solidity",
 	"output": {
@@ -123,6 +123,19 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "burn",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "decimals",
 				"outputs": [
@@ -133,6 +146,19 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "mint",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -241,9 +267,9 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/063WETH.sol": "ERC20"
+			"contracts/051Erc20.sol": "ERC20"
 		},
-		"evmVersion": "cancun",
+		"evmVersion": "shanghai",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -255,12 +281,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/063WETH.sol": {
-			"keccak256": "0xe47e06f0293f1c895b6c3352ada5e703431dc7bb57618eff014ce974a318ad47",
+		"contracts/051Erc20.sol": {
+			"keccak256": "0x7c17d7e4a476bc9ddedb2514ec80fcc7fd134b9f3abdc919e7b0663501697fab",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://7b9003598b3911552160272a99511a9e8f689b23753436e296d18d93e284d6f6",
-				"dweb:/ipfs/QmXVRT571RmWN8VZV3Sd2g8ycwjib1hzZY33Vda8CwUBHH"
+				"bzz-raw://175982f7d79bc5d3197a172df2f452f732e17ffc1e53e5848647e8de33471946",
+				"dweb:/ipfs/QmZtzYcP5NH3TMGAg7NfQLhrfLcdwLUjAZeTfJRddfR4X1"
 			]
 		}
 	},
