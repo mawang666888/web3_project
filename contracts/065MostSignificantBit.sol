@@ -44,4 +44,5 @@ contract MostSignificantBit {
             r += 1;
         }
     }
+    
 }

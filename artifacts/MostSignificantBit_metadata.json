@@ -53,11 +53,11 @@
 	},
 	"sources": {
 		"contracts/065MostSignificantBit.sol": {
-			"keccak256": "0xc2a2509b8c7429afff787b1a19cd8baf037945c004e5a4781f1a3bc488d74a25",
+			"keccak256": "0x7240665b4ba920c17beeab93fa94caa79da60254cc25c06c45d6f5df1c026033",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://da85459463c838c5a55698ec77e29afb2f7420ec8e6d14886aae2e8c137773d3",
-				"dweb:/ipfs/QmcCfiv9kvEEMFrys2Ew3gfgR2bosw9v5uVeYnTksqgKmY"
+				"bzz-raw://ab2ea07593e06f1ff5d69665ddc7aa5d29e213a8a81390ceb4ba82534bfda65d",
+				"dweb:/ipfs/QmVJzUc8vF6ZK3qaQCpaLJEpAoSDVn6UmXPmjHf2oP5JNe"
 			]
 		}
 	},
