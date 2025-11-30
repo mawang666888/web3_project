@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.7;
+pragma solidity 0.8.24;
 
 contract FunctionSelector{
     function getSelector(string calldata _func) external pure returns(bytes4){

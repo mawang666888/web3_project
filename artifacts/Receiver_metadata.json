@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.7+commit.e28d00a7"
+		"version": "0.8.24+commit.e11b9ed9"
 	},
 	"language": "Solidity",
 	"output": {
@@ -27,7 +27,7 @@
 					},
 					{
 						"internalType": "uint256",
-						"name": "amount",
+						"name": "_amount",
 						"type": "uint256"
 					}
 				],
@@ -50,9 +50,9 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/FunctionSelector.sol": "Receiver"
+			"contracts/053FunctionSelector.sol": "Receiver"
 		},
-		"evmVersion": "london",
+		"evmVersion": "shanghai",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -64,12 +64,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/FunctionSelector.sol": {
-			"keccak256": "0x42e61388a75f886d939ba4aa99ff9a48cbe187df90840b38dc00dcda4727bfd0",
+		"contracts/053FunctionSelector.sol": {
+			"keccak256": "0x838cbea86ca67a4ca6aa380e39653cedafeafd4d4a7401a0c8e3c5a7f2022821",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://71d95ca099ccefb2ac3eb5ee86640c80ed62bf7a797360362a0cbe8dd74c9e58",
-				"dweb:/ipfs/QmZsahfowCohZpKawWd1oSXnFm8WD67XJYes321h6RsQbk"
+				"bzz-raw://321c046842f93cf58911ca6bd3ee985685846aa6a9cf5951d9f010e0efa59eea",
+				"dweb:/ipfs/QmSbmh25xL2o1aUgZ8TWaaaLPoLJfQUe6ZHkPy1oSyEdQE"
 			]
 		}
 	},
