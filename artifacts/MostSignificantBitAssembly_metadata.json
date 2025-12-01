@@ -7,7 +7,7 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "count",
+				"name": "MAX_UINT",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -19,16 +19,41 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "inc",
-				"outputs": [
+				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "x",
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "nonpayable",
+				"name": "mostSignificantBit",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "r",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "x",
+						"type": "uint256"
+					}
+				],
+				"name": "mostSignificantBit1",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "msb",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
 				"type": "function"
 			}
 		],
@@ -45,7 +70,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/082Fallback.sol": "Counter"
+			"contracts/081MBS.sol": "MostSignificantBitAssembly"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -59,12 +84,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/082Fallback.sol": {
-			"keccak256": "0xbb652efa1404e2b13653ef5bb430d375c8dbba3f786b8d6247432171fda202ac",
+		"contracts/081MBS.sol": {
+			"keccak256": "0xe56d2ad17ac9dd9db66e63669d8a2ffa051d1b7114071679473efd1f8dfe28aa",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://3f1a5bfbdd5d4387418abfe9f2ecc0b5a9a454e522080fecae04757414d089b5",
-				"dweb:/ipfs/QmXjaZvz4LN6TX9B9N8j2CzKGdWFA9rzpxvgQD7mS26zZk"
+				"bzz-raw://ba21f30fb379aa4f25364d2b303b978fd63c718b587b4f40745a3ec98c3b2009",
+				"dweb:/ipfs/QmUoQNWi1s3RCVZNVTqY8JCrYiY3AuLJ9Y6mEvBCUmjvFW"
 			]
 		}
 	},

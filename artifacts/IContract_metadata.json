@@ -6,23 +6,16 @@
 	"output": {
 		"abi": [
 			{
-				"anonymous": false,
-				"inputs": [
+				"inputs": [],
+				"name": "getMeaningOfLife",
+				"outputs": [
 					{
-						"indexed": false,
-						"internalType": "address",
-						"name": "addr",
-						"type": "address"
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
 					}
 				],
-				"name": "Log",
-				"type": "event"
-			},
-			{
-				"inputs": [],
-				"name": "deploy",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -39,7 +32,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/079ByteCode.sol": "Factory"
+			"contracts/079ByteCode.sol": "IContract"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},

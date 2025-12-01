@@ -6,24 +6,19 @@
 	"output": {
 		"abi": [
 			{
-				"anonymous": false,
 				"inputs": [
 					{
-						"indexed": false,
 						"internalType": "address",
-						"name": "addr",
+						"name": "_target",
 						"type": "address"
 					}
 				],
-				"name": "Log",
-				"type": "event"
+				"stateMutability": "nonpayable",
+				"type": "constructor"
 			},
 			{
-				"inputs": [],
-				"name": "deploy",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
+				"stateMutability": "payable",
+				"type": "fallback"
 			}
 		],
 		"devdoc": {
@@ -39,7 +34,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/079ByteCode.sol": "Factory"
+			"contracts/082Fallback.sol": "FallbackInputOutput"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -53,12 +48,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/079ByteCode.sol": {
-			"keccak256": "0x7d9abad71c5df0b5e338017060b9fb0eb65b1fdb4f2cef96fecaa49875e418bd",
+		"contracts/082Fallback.sol": {
+			"keccak256": "0xbb652efa1404e2b13653ef5bb430d375c8dbba3f786b8d6247432171fda202ac",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://77adc695fc9c5f7aeecf3703f62e7d528cd35585df98f4897d01c8e32b709e52",
-				"dweb:/ipfs/QmVbipVoyoXdWuP9ToM1FZ5cS29FxdnrENV2idxiBXsMWA"
+				"bzz-raw://3f1a5bfbdd5d4387418abfe9f2ecc0b5a9a454e522080fecae04757414d089b5",
+				"dweb:/ipfs/QmXjaZvz4LN6TX9B9N8j2CzKGdWFA9rzpxvgQD7mS26zZk"
 			]
 		}
 	},

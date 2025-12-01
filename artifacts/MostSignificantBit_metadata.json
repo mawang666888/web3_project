@@ -38,7 +38,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/065MostSignificantBit.sol": "MostSignificantBit"
+			"contracts/081MBS.sol": "MostSignificantBit"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -52,12 +52,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/065MostSignificantBit.sol": {
-			"keccak256": "0x7240665b4ba920c17beeab93fa94caa79da60254cc25c06c45d6f5df1c026033",
+		"contracts/081MBS.sol": {
+			"keccak256": "0x689dd0c0313c5ce3e76067c3810cef720e099c7ce1b3d7fdae7d26477ff45de8",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ab2ea07593e06f1ff5d69665ddc7aa5d29e213a8a81390ceb4ba82534bfda65d",
-				"dweb:/ipfs/QmVJzUc8vF6ZK3qaQCpaLJEpAoSDVn6UmXPmjHf2oP5JNe"
+				"bzz-raw://a49f6f41a926510f8955f3cf50d14c7fa45c8e95b1e96886138c12f2633503ff",
+				"dweb:/ipfs/QmQQ4KRzsvLHpmKjeC3YzgBCPiZq5vrJZLtt6VYHqrgU4k"
 			]
 		}
 	},
