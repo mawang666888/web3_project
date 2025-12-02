@@ -37,7 +37,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/072EncodeCall.sol": "IERC20"
+			"contracts/072EncodeCall.sol": "Token"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},

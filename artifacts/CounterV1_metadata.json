@@ -6,19 +6,47 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
+				"inputs": [],
+				"name": "admin",
+				"outputs": [
 					{
 						"internalType": "address",
 						"name": "",
 						"type": "address"
-					},
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "count",
+				"outputs": [
 					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
 					}
 				],
-				"name": "transfer",
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "implementation",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "inc",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -37,7 +65,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/072EncodeCall.sol": "IERC20"
+			"contracts/073Proxy.sol": "CounterV1"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -51,12 +79,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/072EncodeCall.sol": {
-			"keccak256": "0x2cf5ea542bc59a147c3d5d01db8659204f601352db9f558f4e7e7956e3c7509f",
+		"contracts/073Proxy.sol": {
+			"keccak256": "0x57babded63eb8f3a66df0a5d5a37e7407798735bc37b1d3b56242973afb8b552",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://f3b507641749f4b72a87a9ef9a4dc7841ab97d4684af4f2ca79d1197faf6bf79",
-				"dweb:/ipfs/QmPyAaWnaiok5pqMfoYJRhuGhnachAUAQSFEMrGjHkBNHp"
+				"bzz-raw://5c09c1b8294e9963ea383c3b4f23199c2500f097e2f9759331e024884b0eec44",
+				"dweb:/ipfs/QmZ7cvqRNhtYJfSMm35134kiDyMpXLGi3vEUZnDRHULLRR"
 			]
 		}
 	},
