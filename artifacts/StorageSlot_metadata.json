@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.24+commit.e11b9ed9"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/073Proxy.sol": "StorageSlot"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/073Proxy.sol": {
+			"keccak256": "0x2c492978b1b2584c2c6651de95dfec548063a9cd0b42d5fb569c2234e430f20a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c6d5c0832edd680e3c0dc4d0e14677c28efc6cac9947d4af1f188101b33e0679",
+				"dweb:/ipfs/QmcrKtvmpAgALjCeL3BeUFw723gMC9LGku87QvndoHUgzi"
+			]
+		}
+	},
+	"version": 1
+}

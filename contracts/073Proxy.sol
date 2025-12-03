@@ -4,18 +4,22 @@ pragma solidity 0.8.24;
 //1.重现透明可升级代理，并探讨其错误实现
 
 contract CounterV1 {
-    address public implementation;
-    address public admin;
     uint256 public count;
 
     function inc() external {
         count += 1;
     }
+
+    function admin() external view returns (address) {
+        return address(1);
+    }
+
+    function implementation() external view returns (address) {
+        return address(2);
+    }
 }
 
 contract CounterV2 {
-    address public implementation;
-    address public admin;
     uint256 public count;
 
     function inc() external {
@@ -27,12 +31,15 @@ contract CounterV2 {
     }
 }
 
-contract BuggyProxy {
-    address public implementation;
-    address public admin;
+contract Proxy {
+    bytes32 private constant IMPLEMENTATION_SLOT =
+        bytes32(uint(keccak256("eip1967.proxy.implementation")) - 1);
+
+    bytes32 private constant ADMIN_SLOT =
+        bytes32(uint(keccak256("eip1967.proxy.ADMIN")) - 1);
 
     constructor() {
-        admin = msg.sender;
+        _setAdmin(msg.sender);
     }
 
     // function _delegate() private {
@@ -40,33 +47,150 @@ contract BuggyProxy {
     //     require(ok, "delegatecall failed");
     // }
     function _delegate(address _implementation) private {
-        assembly{
-            calldatacopy(0,0,calldatasize())
+        assembly {
+            calldatacopy(0, 0, calldatasize())
 
-            let result:=delegatecall(gas(),_implementation,0,calldatasize(),0,0)
+            let result := delegatecall(
+                gas(),
+                _implementation,
+                0,
+                calldatasize(),
+                0,
+                0
+            )
 
-            returndatacopy(0,0,returndatasize())
+            returndatacopy(0, 0, returndatasize())
 
             switch result
-            case 0{
-                revert(0,returndatasize())
+            case 0 {
+                revert(0, returndatasize())
             }
             default {
-                return(0,returndatasize())
+                return(0, returndatasize())
             }
         }
     }
 
+    function _fallback() private {
+        _delegate(_getImplementation());
+    }
+
     fallback() external payable {
-        _delegate(implementation);
+        _fallback();
     }
 
     receive() external payable {
-        _delegate(implementation);
+        _fallback();
     }
 
-    function upgradeTo(address _implementation) external {
-        require(msg.sender == admin, "not authorized");
-        implementation = _implementation;
+    modifier ifAdmin() {
+        if (msg.sender == _getAdmin()) {
+            _;
+        } else {
+            _fallback();
+        }
+    }
+
+    function changeAdmin(address _admin) external ifAdmin {
+        _setAdmin(_admin);
+    }
+
+    function upgradeTo(address _implementation) external ifAdmin {
+        _setImplementattion(_implementation);
+    }
+
+    function _getAdmin() private view returns (address) {
+        return StorageSlot.getAddressSlot(ADMIN_SLOT).value;
+    }
+
+    function _setAdmin(address _admin) private {
+        require(_admin != address(0), "admin=0 address");
+        StorageSlot.getAddressSlot(ADMIN_SLOT).value = _admin;
+    }
+
+    function _getImplementation() private view returns (address) {
+        return StorageSlot.getAddressSlot(IMPLEMENTATION_SLOT).value;
+    }
+
+    function _setImplementattion(address _implementation) private {
+        require(_implementation.code.length > 0, "not a contract");
+        StorageSlot.getAddressSlot(IMPLEMENTATION_SLOT).value = _implementation;
+    }
+
+    function admin() external ifAdmin returns (address) {
+        return _getAdmin();
+    }
+
+    function implementation() external ifAdmin returns (address) {
+        return _getImplementation();
+    }
+}
+
+contract ProxyAdmin {
+    address public owner;
+
+    constructor() {
+        owner = msg.sender;
+    }
+
+    modifier onlyOwner() {
+        require(msg.sender == owner, "not authorized");
+        _;
+    }
+
+    function getProxyAdmin(address proxy) external view returns(address){
+        (bool ok,bytes memory res)=proxy.staticcall(
+            abi.encodeCall(Proxy.admin,())
+        );
+        require(ok,"call failed");
+        return abi.decode(res, (address));
+    }
+
+     function getProxyImplementation(address proxy) external view returns(address){
+        (bool ok,bytes memory res)=proxy.staticcall(
+            abi.encodeCall(Proxy.implementation,())
+        );
+        require(ok,"call failed");
+        return abi.decode(res, (address));
+    }
+
+    function changeProxyAdmin(
+        address payable proxy,
+        address _admin
+    ) external onlyOwner {
+        Proxy(proxy).changeAdmin(_admin);
+    }
+
+    function upgrade(
+        address payable proxy,
+        address implementation
+    ) external onlyOwner {
+        Proxy(proxy).upgradeTo(implementation);
+    }
+}
+
+library StorageSlot {
+    struct AddressSlot {
+        address value;
+    }
+
+    function getAddressSlot(
+        bytes32 slot
+    ) internal pure returns (AddressSlot storage r) {
+        assembly {
+            r.slot := slot
+        }
+    }
+}
+
+contract TestSlot {
+    bytes32 public constant SLOT = keccak256("TEST_SLOT");
+
+    function getSlot() external view returns (address) {
+        return StorageSlot.getAddressSlot(SLOT).value;
+    }
+
+    function writeSlot(address _addr) external {
+        StorageSlot.getAddressSlot(SLOT).value = _addr;
     }
 }

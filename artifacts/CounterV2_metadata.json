@@ -7,19 +7,6 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "admin",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
 				"name": "count",
 				"outputs": [
 					{
@@ -36,19 +23,6 @@
 				"name": "dec",
 				"outputs": [],
 				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "implementation",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -87,11 +61,11 @@
 	},
 	"sources": {
 		"contracts/073Proxy.sol": {
-			"keccak256": "0x57babded63eb8f3a66df0a5d5a37e7407798735bc37b1d3b56242973afb8b552",
+			"keccak256": "0x2c492978b1b2584c2c6651de95dfec548063a9cd0b42d5fb569c2234e430f20a",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://5c09c1b8294e9963ea383c3b4f23199c2500f097e2f9759331e024884b0eec44",
-				"dweb:/ipfs/QmZ7cvqRNhtYJfSMm35134kiDyMpXLGi3vEUZnDRHULLRR"
+				"bzz-raw://c6d5c0832edd680e3c0dc4d0e14677c28efc6cac9947d4af1f188101b33e0679",
+				"dweb:/ipfs/QmcrKtvmpAgALjCeL3BeUFw723gMC9LGku87QvndoHUgzi"
 			]
 		}
 	},

@@ -1,59 +1,74 @@
 {
 	"compiler": {
-		"version": "0.8.7+commit.e28d00a7"
+		"version": "0.8.24+commit.e11b9ed9"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
 			{
-				"anonymous": false,
-				"inputs": [
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "fallback"
+			},
+			{
+				"inputs": [],
+				"name": "admin",
+				"outputs": [
 					{
-						"indexed": false,
 						"internalType": "address",
 						"name": "",
 						"type": "address"
 					}
 				],
-				"name": "Deploy",
-				"type": "event"
+				"stateMutability": "nonpayable",
+				"type": "function"
 			},
 			{
 				"inputs": [
 					{
-						"internalType": "bytes",
-						"name": "_code",
-						"type": "bytes"
+						"internalType": "address",
+						"name": "_admin",
+						"type": "address"
 					}
 				],
-				"name": "deploy",
+				"name": "changeAdmin",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "implementation",
 				"outputs": [
 					{
 						"internalType": "address",
-						"name": "addr",
+						"name": "",
 						"type": "address"
 					}
 				],
-				"stateMutability": "payable",
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "_target",
+						"name": "_implementation",
 						"type": "address"
-					},
-					{
-						"internalType": "bytes",
-						"name": "_data",
-						"type": "bytes"
 					}
 				],
-				"name": "execute",
+				"name": "upgradeTo",
 				"outputs": [],
-				"stateMutability": "payable",
+				"stateMutability": "nonpayable",
 				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -69,9 +84,9 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/025Proxy.sol": "Proxy"
+			"contracts/073Proxy.sol": "Proxy"
 		},
-		"evmVersion": "london",
+		"evmVersion": "shanghai",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -83,12 +98,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/025Proxy.sol": {
-			"keccak256": "0x0b11ab8cfe5f45d5f03bd8c142085df8c515518bd24389eead546cec9cd4aec8",
+		"contracts/073Proxy.sol": {
+			"keccak256": "0x2c492978b1b2584c2c6651de95dfec548063a9cd0b42d5fb569c2234e430f20a",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://47e9c3122d3a873165b8f1dcda3a91f7e7418f5df260096fc8dbd3e9de802bc9",
-				"dweb:/ipfs/QmNS8JpcptzcjRtTLRQGVAmMvyyCMssjEqiNoNCzT64GuG"
+				"bzz-raw://c6d5c0832edd680e3c0dc4d0e14677c28efc6cac9947d4af1f188101b33e0679",
+				"dweb:/ipfs/QmcrKtvmpAgALjCeL3BeUFw723gMC9LGku87QvndoHUgzi"
 			]
 		}
 	},
